@@ -1,12 +1,12 @@
 import "./Navbar.css";
-
+import logo from "../assets/logo.png";
 function Navbar(){
     return(
         <nav>
             
             <div className="logo-section">
                 <img 
-                src={`${import.meta.env.BASE_URL}logo.png`}
+                src={logo}
                 alt="logo"
                 />
                 <span>Jai Chamunda Furniture</span>
