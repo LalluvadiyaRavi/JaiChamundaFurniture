@@ -2,7 +2,7 @@ import "./Hero.css";
 
 function Hero() {
   return (
-    <section className="hero">
+    <section className="hero" data-aos="fade-up">
       <div className="hero-content">
 
         <h1>Jai Chamunda Furniture Store</h1>

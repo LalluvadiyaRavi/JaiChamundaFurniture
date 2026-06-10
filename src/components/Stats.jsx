@@ -2,8 +2,11 @@ import "./Stats.css";
 
 function Stats() {
   return (
-    <section className="stats">
-      <h2> Our Stats </h2>
+    <section className="stats" data-aos="fade-up">
+      <div>
+        <h2> Our Stats </h2>
+      </div>
+      
       <div className="stat-card">
         <h2>10+</h2>
         <p>Years Experience</p>
