@@ -24,7 +24,10 @@ function Contact() {
               href="https://wa.me/91XXXXXXXXXX"
               className="whatsapp-btn"
               target="_blank"
-            > <img src="whatsapp-logo.png" alt="WhatsApp" style={{textAlign:"center",width:"20px",height:"20px",marginRight:"8px"}} />
+            > <img 
+              src={`${import.meta.env.BASE_URL}whatsapp-logo.png`}
+              alt="WhatsApp"
+              style={{textAlign:"center",width:"20px",height:"20px",marginRight:"8px"}} />
                WhatsApp Us
             </a>
 
