@@ -14,25 +14,7 @@ function Gallery() {
               <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858" alt="Kitchen Project" />
 
               <img src="https://images.unsplash.com/photo-1494526585095-c41746248156" alt="Interior Design" />
-              <img
-                src="https://via.placeholder.com/300x200"
-                alt="Furniture Project"
-              />
-
-              <img
-                src="https://via.placeholder.com/300x200"
-                alt="Furniture Project"
-              />
-
-              <img
-                src="https://via.placeholder.com/300x200"
-                alt="Furniture Project"
-              />
-
-              <img
-                src="https://via.placeholder.com/300x200"
-                alt="Furniture Project"
-              />
+              
            </div>
         </section>
     );

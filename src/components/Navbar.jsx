@@ -5,7 +5,7 @@ function Navbar(){
         <nav>
             
             <div className="logo-section">
-                <img src="/logo.png" alt="Jai Chamunda Furniture" />
+                <img src="./logo.png" alt="Jai Chamunda Furniture" />
                 <span>Jai Chamunda Furniture</span>
             </div>
             <ul>
