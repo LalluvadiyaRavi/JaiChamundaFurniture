@@ -8,6 +8,11 @@
   text-align: center;
   background: white;
 }
+.stats-header {
+  margin-bottom: 40px;
+  text-align: center;
+  justify-content: center;
+}
 .stats h2 {
   color: var(--primary);
   margin-bottom: 40px;

@@ -3,7 +3,7 @@ import "./Stats.css";
 function Stats() {
   return (
     <section className="stats" data-aos="fade-up">
-      <div>
+      <div className="stats-header">
         <h2> Our Stats </h2>
       </div>
       
