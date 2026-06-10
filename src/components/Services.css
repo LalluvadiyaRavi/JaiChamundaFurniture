@@ -1,0 +1,51 @@
+.services {
+  margin-top:40px;
+  padding: 100px 50px;
+  text-align: center;
+}
+
+.services h2 {
+  margin-bottom: 40px;
+  color: var(--primary);
+}
+
+.services-container {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.service-card {
+  background: var(--white);
+height:180px;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+  border: 1px solid var(--border);
+
+  padding: 25px;
+  width: 260px;
+
+  border-radius: 12px;
+
+  transition: 0.3s;
+
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-card h3 {
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  color: #555;
+}

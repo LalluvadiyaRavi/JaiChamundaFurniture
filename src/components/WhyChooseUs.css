@@ -1,0 +1,48 @@
+.why-choose-us {
+  margin-top:10px;
+  padding: 70px 50px;
+  text-align: center;
+}
+
+.why-choose-us h2 {
+  color: var(--primary);
+  margin-bottom: 40px;
+}
+
+.why-container {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.why-card {
+  background: var(--white);
+height:180px;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+  width: 260px;
+
+  padding: 25px;
+
+  border: 1px solid var(--border);
+
+  border-radius: 12px;
+
+  transition: 0.3s;
+
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.why-card:hover {
+  transform: translateY(-5px);
+}
+
+.why-card h3 {
+  color: var(--primary);
+  margin-bottom: 10px;
+}

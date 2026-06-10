@@ -1,0 +1,158 @@
+nav{
+
+position:sticky;
+
+top:0;
+
+z-index:1000;
+
+background:white;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:15px 60px;
+
+box-shadow:
+0 2px 12px
+rgba(0,0,0,.08);
+
+}
+
+.logo-section{
+
+display:flex;
+
+align-items:center;
+
+gap:10px;
+
+}
+
+.logo-section img{
+
+height:60px;
+
+object-fit:contain;
+
+}
+
+.logo-section span{
+
+font-size:28px;
+
+font-weight:700;
+
+color:var(--primary);
+
+}
+
+/* DESKTOP */
+
+nav ul{
+
+display:flex;
+
+gap:35px;
+
+list-style:none;
+
+margin:0;
+
+}
+
+nav ul li a{
+
+text-decoration:none;
+
+color:#333;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+nav ul li a:hover{
+
+color:var(--primary);
+
+}
+
+/* HAMBURGER */
+
+.menu-icon{
+
+display:none;
+
+font-size:28px;
+
+cursor:pointer;
+
+}
+
+/* MOBILE */
+@media(max-width:768px){
+
+nav{
+padding:12px 18px;
+}
+
+.logo-section{
+max-width:180px;
+}
+
+.logo-section img{
+height:42px;
+}
+
+.logo-section span{
+font-size:14px;
+line-height:1.2;
+}
+
+.hamburger{
+display:block;
+font-size:28px;
+}
+
+nav ul{
+display:none;
+
+position:absolute;
+
+top:100%;
+
+left:0;
+
+width:100%;
+
+background:white;
+
+padding:20px;
+
+flex-direction:column;
+
+gap:20px;
+
+box-shadow:0 10px 20px rgba(0,0,0,.08);
+}
+
+.show-menu{
+display:flex;
+}
+
+}
+
+.services,
+.gallery,
+.why-choose-us{
+
+background:white;
+
+margin-top:20px;
+
+}
