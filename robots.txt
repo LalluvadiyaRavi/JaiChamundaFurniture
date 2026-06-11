@@ -1,0 +1,6 @@
+User-agent: *
+
+Allow: /
+
+Sitemap:
+https://lalluvadiyaravi.github.io/JaiChamundaFurniture/sitemap.xml
