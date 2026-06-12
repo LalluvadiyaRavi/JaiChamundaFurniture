@@ -1,5 +1,5 @@
 import "./Footer.css";
-
+import logo from "../assets/logo.png";
 function Footer(){
 return(
 
@@ -10,7 +10,7 @@ return(
 <div>
 
 <img
-src="/logo.png"
+src={logo}
 alt=""
 className="footer-logo"
 />

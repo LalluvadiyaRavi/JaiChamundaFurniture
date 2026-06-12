@@ -21,7 +21,7 @@ function Contact() {
             <p>🕒 Mon - Sat : 9 AM - 7 PM</p>
 
             <a 
-              href="https://wa.me/91XXXXXXXXXX"
+              href="https://wa.me/919978264852"
               className="whatsapp-btn"
               target="_blank"
             > <img 

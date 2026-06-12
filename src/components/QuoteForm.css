@@ -1,0 +1,71 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0,0,0,0.6);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 2000;
+}
+
+.quote-modal {
+  background: white;
+
+  width: 90%;
+  max-width: 500px;
+
+  padding: 30px;
+
+  border-radius: 15px;
+
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+
+  top: 15px;
+  right: 20px;
+
+  background: none;
+  border: none;
+
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.quote-modal form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.quote-modal input,
+.quote-modal textarea {
+  padding: 12px;
+
+  border: 1px solid #ccc;
+
+  border-radius: 8px;
+}
+
+.quote-modal button[type="submit"] {
+  background: var(--primary);
+
+  color: white;
+
+  border: none;
+
+  padding: 12px;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+}

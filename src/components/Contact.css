@@ -1,9 +1,12 @@
 .contact{
 
 padding:80px 20px;
-
-background:#f8f5f0;
-
+background:
+  linear-gradient(
+    180deg,
+    #faf8f5,
+    #f3ede6
+  );
 }
 
 .contact h2{

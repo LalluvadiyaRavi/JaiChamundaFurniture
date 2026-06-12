@@ -4,6 +4,11 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
 
+import React from "react";
+import ReactDOM from "react-dom/client";
+
+import { HelmetProvider } from "react-helmet-async";
+
 import AOS from "aos"
 import "aos/dist/aos.css"
 
@@ -12,8 +17,10 @@ AOS.init({
   once: true,
 })
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-)
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <HelmetProvider>
+      <App />
+    </HelmetProvider>
+  </React.StrictMode>,
+);

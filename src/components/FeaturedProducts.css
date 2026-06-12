@@ -1,0 +1,56 @@
+.featured-products {
+  padding: 80px 20px;
+  background: #faf8f5;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-header h2 {
+  color: var(--primary);
+  font-size: 40px;
+}
+
+.section-header p {
+  color: #666;
+}
+
+.featured-grid {
+  max-width: 1200px;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns:
+  repeat(auto-fit, minmax(300px, 1fr));
+
+  gap: 30px;
+}
+
+.view-all-container {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.view-all-btn {
+  background: var(--primary);
+  color: white;
+
+  border: none;
+  border-radius: 10px;
+
+  padding: 14px 28px;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.view-all-btn:hover {
+  transform: translateY(-3px);
+  background: var(--primary-dark);
+}

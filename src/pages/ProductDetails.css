@@ -1,0 +1,417 @@
+.product-details {
+  padding: 80px 50px;
+  max-width: 1200px;
+  margin: auto;
+}
+.back-btn {
+  margin: 80px 110px 0;
+  padding: 10px 20px;
+  margin-top:80px;
+  margin-bottom: 0px;
+  background: var(--primary);
+  color: white;
+
+  border: none;
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.back-btn:hover {
+  background: var(--primary-dark);
+  transform: translateY(-2px);
+}
+.details-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: start;
+}
+.details-content ul {
+  margin-bottom: 40px;
+}
+.action-buttons {
+  display: flex;
+  gap: 15px;
+
+  margin-top: 20px;
+}
+.details-image {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap:15px;
+}
+.quote-btn,
+.whatsapp-btn {
+  min-width: 150px;
+}
+.image-zoom-container {
+  overflow: hidden;
+  border-radius: 15px;
+}
+.main-product-image {
+  
+  cursor:pointer;
+
+  width: 500px;
+  max-width: 500px;
+  height: 400px;
+
+  object-fit: cover;
+  border-radius: 15px;
+  transition: transform 0.4s ease;
+  display: block;
+}
+
+.image-zoom-container:hover .main-product-image {
+  transform: scale(1.25);
+  cursor:zoom-in;
+}
+
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.92);
+  backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 9999;
+}
+.lightbox img {
+
+  max-width: 85%;
+  max-height: 85vh;
+
+  border-radius: 15px;
+
+  animation: fadeIn 0.3s ease;
+
+  box-shadow:
+  0 10px 40px rgba(0,0,0,.4);
+}
+
+@keyframes fadeIn {
+
+  from {
+    opacity: 0;
+    transform: scale(.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+}
+.image-counter {
+
+  position: absolute;
+
+  bottom: 30px;
+
+  color: white;
+
+  font-size: 18px;
+
+  font-weight: 600;
+
+  background: rgba(255,255,255,.15);
+
+  padding: 8px 16px;
+
+  border-radius: 30px;
+}
+.swipe-hint {
+    display: none;
+  }
+.close-lightbox {
+  position: absolute;
+
+  top: 25px;
+  right: 35px;
+
+  font-size: 45px;
+
+  color: white;
+
+  cursor: pointer;
+  transition:.3s;
+  font-weight: bold;
+}
+.close-lightbox:hover{
+  transform:rotate(90deg);
+}
+.lightbox-prev,
+.lightbox-next {
+  position: absolute;
+
+  top: 50%;
+  transform: translateY(-50%);
+
+  background: rgba(255,255,255,0.15);
+
+  border: none;
+
+  color: white;
+
+  font-size: 28px;
+
+  width: 55px;
+  height: 55px;
+
+  cursor: pointer;
+
+  border-radius: 50%;
+  transition:.3s;
+}
+
+.lightbox-prev {
+  left: 40px;
+}
+
+.lightbox-next {
+  right: 40px;
+}
+
+.lightbox-prev:hover,
+.lightbox-next:hover {
+  background: rgba(255,255,255,0.3);
+}
+.thumbnail-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+  flex-direction: column;
+}
+
+.thumbnail {
+  width: 90px;
+  height: 90px;
+
+  object-fit: cover;
+
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  border: 2px solid transparent;
+
+  transition: 0.3s;
+}
+
+.thumbnail:hover {
+  transform: scale(1.05);
+}
+
+.active-thumbnail {
+  border-color: var(--primary);
+}
+
+.details-content h1 {
+  color: var(--primary);
+  margin-bottom: 20px;
+}
+
+.details-content p {
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+.details-content ul {
+  margin-bottom: 30px;
+}
+
+.details-content li {
+  margin-bottom: 10px;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.quote-btn,
+.whatsapp-btn {
+  width:100px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.quote-btn {
+  background: var(--primary);
+  color: white;
+}
+
+.whatsapp-btn {
+  background: #25D366;
+  color: white;
+}
+.specifications {
+  margin-top: 20px;
+  margin-bottom: 30px;
+
+  border: 1px solid #ddd;
+  border-radius: 10px;
+
+  overflow: hidden;
+}
+
+.spec-row {
+  display: flex;
+
+  justify-content: space-between;
+
+  padding: 12px 15px;
+
+  border-bottom: 1px solid #eee;
+}
+
+.spec-row:last-child {
+  border-bottom: none;
+}
+
+.spec-row span:first-child {
+  font-weight: 600;
+  color: var(--primary);
+}.related-products {
+  max-width:1200px;
+  margin:80px auto;
+}
+
+.related-products h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: var(--primary);
+}
+
+.related-grid {
+  display: grid;
+
+  grid-template-columns:
+  repeat(auto-fit, minmax(280px, 1fr));
+
+  gap: 25px;
+}
+
+.related-card {
+  background: white;
+
+  border-radius: 12px;
+
+  overflow: hidden;
+
+  text-decoration: none;
+
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+
+  transition: 0.3s;
+}
+
+.related-card:hover {
+  transform: translateY(-5px);
+}
+
+.related-card img {
+  width: 100%;
+
+  height: 150px;
+
+  object-fit: cover;
+}
+
+.related-card h4 {
+  text-align: center;
+
+  padding: 12px;
+
+  color: #333;
+}
+@media (max-width: 769px) {
+  
+  
+  .product-details-page {
+    margin: 30px 30px 30px 30px;
+  }
+  .product-details {
+    padding: 90px 15px 30px;
+  }
+
+  .back-btn {
+    margin: 0 0 20px 0;
+  }
+
+  .details-container {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .details-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-product-image {
+    width: 100%;
+    max-width: 320px;
+    height: 250px;
+  }
+  .image-zoom-container:hover .main-product-image {
+    transform: none;
+  }
+  
+.swipe-hint {
+
+  position: absolute;
+
+  bottom: 70px;
+
+  color: rgba(255,255,255,.8);
+
+  font-size: 14px;
+}
+  .thumbnail-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 10px;
+  }
+
+  .thumbnail {
+    width: 70px;
+    height: 70px;
+  }
+
+  .details-content {
+    text-align: left;
+  }
+
+  .details-content h1 {
+    font-size: 28px;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .quote-btn,
+  .whatsapp-btn {
+    width: 100%;
+  }
+}

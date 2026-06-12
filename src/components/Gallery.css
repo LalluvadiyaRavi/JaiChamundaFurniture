@@ -1,7 +1,12 @@
 .gallery{
 
 padding:80px 20px;
-
+background:
+  linear-gradient(
+    180deg,
+    #faf8f5,
+    #f3ede6
+  );
 }
 
 .gallery h2{
@@ -35,7 +40,7 @@ object-fit:cover;
 
 border-radius:14px;
 
-transition:.3s;
+transition:0.3s;
 
 }
 

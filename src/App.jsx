@@ -1,27 +1,37 @@
-import Navbar from "./components/navbar";
-import Hero from "./components/hero";
-import Stats from "./components/stats";
-import Services from "./components/services";
-import WhyChooseUs from "./components/WhyChooseUs";
-import Gallery from "./components/gallery";
-import About from "./components/about";
-import Contact from "./components/contact";
-import Footer from "./components/Footer";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
+import Navbar from "./components/Navbar";
+
+import Home from "./pages/Home";
+import Products from "./pages/Products";
+import ProductDetails from "./pages/ProductDetails";
+
+import Cart from "./pages/Cart";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
+import Profile from "./pages/Profile";
 
 function App() {
   return (
-    <>
+    <HashRouter>
       <Navbar />
-      <Hero />
-      <Stats />
-      <Services />
-      <WhyChooseUs />
-      <Gallery />
-      <About />
-      <Contact />
-      <Footer />
-    </>
+      <Routes>
+        <Route path="/" element={<Home />} />
+
+        <Route path="/products" element={<Products />} />
+
+        <Route path="/products/:id" element={<ProductDetails />} />
+
+        <Route path="/cart" element={<Cart />} />
+
+        <Route path="/login" element={<Login />} />
+
+        <Route path="/register" element={<Register />} />
+
+        <Route path="/profile" element={<Profile />} />
+      </Routes>
+    </HashRouter>
   );
 }
+
 export default App;

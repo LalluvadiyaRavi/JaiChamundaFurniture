@@ -81,28 +81,52 @@ nav ul li a:hover{
 color:var(--primary);
 
 }
+nav ul button{
+
+background:none;
+
+border:none;
+
+font-size:16px;
+
+font-weight:600;
+
+cursor:pointer;
+
+color:#333;
+
+}
+
+nav ul button:hover{
+
+color:var(--primary);
+
+}
 
 /* HAMBURGER */
 
-.menu-icon{
+.menu-btn{
 
 display:none;
 
 font-size:28px;
 
+background:none;
+
+border:none;
+
 cursor:pointer;
 
 }
 
-/* MOBILE */
-@media(max-width:768px){
+/* MOBILE */@media(max-width:768px){
 
 nav{
 padding:12px 18px;
 }
 
 .logo-section{
-max-width:180px;
+max-width:200px;
 }
 
 .logo-section img{
@@ -110,16 +134,15 @@ height:42px;
 }
 
 .logo-section span{
-font-size:14px;
-line-height:1.2;
+font-size:15px;
 }
 
-.hamburger{
+.menu-btn{
 display:block;
-font-size:28px;
 }
 
 nav ul{
+
 display:none;
 
 position:absolute;
@@ -136,23 +159,20 @@ padding:20px;
 
 flex-direction:column;
 
+align-items:center;
+
 gap:20px;
 
-box-shadow:0 10px 20px rgba(0,0,0,.08);
+box-shadow:
+0 10px 20px
+rgba(0,0,0,.08);
+
 }
 
-.show-menu{
+nav ul.show{
+
 display:flex;
-}
 
 }
-
-.services,
-.gallery,
-.why-choose-us{
-
-background:white;
-
-margin-top:20px;
 
 }
