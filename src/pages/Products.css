@@ -15,9 +15,10 @@
 .products-page{
   max-width:1400px;
   margin:auto;
-  padding:120px 40px;
+  padding:40px 60px 80px;
 }
 .products-grid {
+  
   display: grid;
 
   grid-template-columns:
@@ -60,6 +61,7 @@
 }
 
 @media (max-width: 769px) {
+  
 .products-grid{
     display: grid;
     margin:25px 25px 25px 25px;
@@ -72,4 +74,5 @@
 
     margin-top: 40px;
 }
+
 }

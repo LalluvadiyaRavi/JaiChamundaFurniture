@@ -1,0 +1,71 @@
+.bottom-cta{
+
+display:none;
+
+}
+
+@media(max-width:768px){
+
+.bottom-cta{
+
+position:fixed;
+
+bottom:0;
+
+left:0;
+
+width:100%;
+
+display:flex;
+
+z-index:999;
+
+background:white;
+
+box-shadow:
+0 -4px 20px
+rgba(0,0,0,.1);
+
+padding-bottom: env(safe-area-inset-bottom);
+}
+
+.bottom-cta button,
+.bottom-cta a{
+
+flex:1;
+
+padding:16px;
+
+border:none;
+
+font-size:16px;
+
+font-weight:600;
+
+text-align:center;
+
+text-decoration:none;
+
+cursor:pointer;
+
+}
+
+.bottom-cta button{
+
+background:
+var(--primary);
+
+color:white;
+
+}
+
+.bottom-cta a{
+
+background:
+#25D366;
+
+color:white;
+
+}
+
+}

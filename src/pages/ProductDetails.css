@@ -249,6 +249,7 @@
   border: none;
   border-radius: 8px;
   cursor: pointer;
+  text-decoration:none;
 }
 
 .quote-btn {

@@ -33,3 +33,12 @@ h1, h2, h3 {
 html{
 scroll-behavior:smooth;
 }
+@media(max-width:768px){
+
+body{
+
+padding-bottom:70px;
+
+}
+
+}

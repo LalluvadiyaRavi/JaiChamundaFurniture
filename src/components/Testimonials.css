@@ -31,13 +31,24 @@
   background: white;
     min-height:auto;
   padding: 30px;
-
+  position: relative;
+  overflow: hidden;
   border-radius: 15px;
 
   box-shadow:
     0 4px 15px rgba(0,0,0,.08);
 
   transition: 0.3s ease;
+}
+
+.testimonial-card::before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:4px;
+  background:var(--primary);
 }
 
 .testimonial-card:hover {
@@ -66,8 +77,8 @@
 }
 
 .customer-avatar{
-  width:70px;
-  height:70px;
+  width:60px;
+  height:60px;
 
   border-radius:50%;
 
@@ -78,10 +89,10 @@
   align-items:center;
   justify-content:center;
 
-  font-size:28px;
-  font-weight:700;
+  font-size:24px;
+  font-weight:bold;
 
-  margin:0 auto 20px;
+  margin:0 auto 15px;
 }
 
 .quote-icon {
