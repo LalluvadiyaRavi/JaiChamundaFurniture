@@ -1,62 +1,46 @@
 import "./Footer.css";
-import logo from "../assets/logo.png";
-function Footer(){
-return(
 
-<footer className="footer">
+function Footer() {
+  return (
+    <footer className="footer">
 
-<div className="footer-top">
+      <div className="footer-container">
 
-<div>
+        <div className="footer-section">
+          <h3>Jai Chamunda Furniture</h3>
 
-<img
-src={logo}
-alt=""
-className="footer-logo"
-/>
+          <p>
+            Premium Furniture & Interior Solutions
+            crafted with quality and trust.
+          </p>
+        </div>
 
-<h3>
-Jai Chamunda Furniture
-</h3>
+        <div className="footer-section">
+          <h3>Quick Links</h3>
 
-<p>
-Custom Furniture & Interior Solutions
-</p>
+          <a href="/">Home</a>
+          <a href="/#/products">Products</a>
+          <a href="/?scroll=about">About</a>
+          <a href="/?scroll=contact">Contact</a>
+        </div>
 
-</div>
+        <div className="footer-section">
+          <h3>Contact</h3>
 
-<div>
+          <p>📍 Bhavnagar, Gujarat</p>
+          <p>📞 +91 XXXXX XXXXX</p>
+          <p>✉️ jaichamundafurniture@gmail.com</p>
+        </div>
 
-<h4>Quick Links</h4>
+      </div>
 
-<a href="#">Home</a>
-<a href="#services">Services</a>
-<a href="#gallery">Gallery</a>
+      <div className="footer-bottom">
+        © {new Date().getFullYear()} Jai Chamunda Furniture.
+        All Rights Reserved.
+      </div>
 
-</div>
-
-<div>
-
-<h4>Contact</h4>
-
-<p>Bhavnagar, Gujarat</p>
-
-<p>+91 XXXXXXXXXX</p>
-
-</div>
-
-</div>
-
-<div className="copyright">
-
-© 2026 Jai Chamunda Furniture
-
-</div>
-
-</footer>
-
-);
-
+    </footer>
+  );
 }
 
 export default Footer;

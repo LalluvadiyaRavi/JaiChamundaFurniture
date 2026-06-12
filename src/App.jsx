@@ -18,6 +18,8 @@ import FloatingWhatsApp from "./components/FloatingWhatsApp";
 import BackToTop from "./components/BackToTop";
 import BottomCTA from "./components/BottomCTA";
 import QuoteForm from "./components/QuoteForm";
+import NotFound from "./pages/NotFound";
+import Footer from "./components/Footer";
 
 function App() {
   const [showForm, setShowForm] = useState(false);
@@ -53,9 +55,10 @@ function App() {
         <Route path="/register" element={<Register />} />
 
         <Route path="/profile" element={<Profile />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
-      <FloatingWhatsApp/>
-      
+      <Footer />
+      <FloatingWhatsApp/>   
       <BackToTop/>
       <BottomCTA onQuoteClick={() => setShowForm(true)}/>
       <QuoteForm
@@ -63,6 +66,7 @@ function App() {
         onClose={() => setShowForm(false)}
         productName="General Inquiry"
       />
+      
     </HashRouter>
   );
 }
