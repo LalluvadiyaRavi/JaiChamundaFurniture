@@ -63,8 +63,8 @@ function Navbar(){
             </button>
 
             <ul className={menuOpen?"show":""}>
-                <li><a href="#/">Home</a></li>
-                <li><a href="#/products">Products</a></li>
+                <li><link to="/">Home</link></li>
+                <li><link to="/products">Products</link></li>
                 <li>
                     <Link to="/cart" className="cart-link">
                     🛒 Cart
@@ -110,22 +110,22 @@ function Navbar(){
                 </li>
                 {user ?(
                     <li>
-                        <a href="/#/profile">
+                        <link to="/profile">
                             👤 {user.name.split(" ")[0]}
-                        </a>
+                        </link>
                     </li>
                 ):(
                     <>
                         <li>
-                            <a href="/#/login">
+                            <link to="/login">
                              Login
-                            </a>
+                            </link>
                         </li>
                         
                         <li>
-                            <a href="/#/register">
+                            <link to="/register">
                              Register
-                            </a>
+                            </link>
                         </li>
                     </>
                 )}
