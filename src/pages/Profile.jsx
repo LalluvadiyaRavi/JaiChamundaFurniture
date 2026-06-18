@@ -32,7 +32,7 @@ function Profile() {
       <div className="profile-card">
 
         <div className="avatar">
-          {user.name[0]}
+          {user?.name[0] || "U"}
         </div>
 
         <h2>{user.name}</h2>
