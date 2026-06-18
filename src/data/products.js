@@ -25,6 +25,7 @@ const products = [
   image:kitchen1,
   images: [kitchen1, kitchen2, kitchen3],
   description: "Custom modular kitchens designed for modern homes.",
+  price:8500,
   features: [
     "Premium Quality Materials",
     "Customized Design",
@@ -47,8 +48,9 @@ const products = [
     image: wardrobe1,
     images: [wardrobe1, wardrobe2, wardrobe3],
     description:
-      "Premium wardrobes tailored to your storage needs.",
-      features: [
+      "Premium wardrobes tailored to your storage needs.", 
+    price:25000, 
+    features: [
     "Premium Quality Materials",
     "Customized Design",
     "Professional Installation",
@@ -72,6 +74,7 @@ const products = [
     images: [tvunit1, tvunit2, tvunit3],
     description:
       "Modern TV units with elegant finishes.",
+    price:18000,
     features: [
     "Premium Quality Materials",
     "Customized Design",
@@ -94,6 +97,7 @@ const products = [
     images: [interior1, interior2, interior3],
     description:
       "Complete interior solutions for your home.",
+    price:12000,
     features: [
     "Premium Quality Materials",
     "Customized Design",
@@ -116,6 +120,7 @@ const products = [
     images: [plywood1, plywood2, plywood3],
     description:
       "Durable plywood furniture crafted with quality.",
+    price:10000,
     features: [
     "Premium Quality Materials",
     "Customized Design",

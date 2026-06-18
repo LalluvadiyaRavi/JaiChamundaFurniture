@@ -17,6 +17,7 @@ function ProductCard({ product }) {
       <img
         src={product.image}
         alt={product.name}
+        loading="lazy"
       />
 
       <h3>{product.name}</h3>

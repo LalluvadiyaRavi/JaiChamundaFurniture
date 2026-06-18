@@ -7,13 +7,13 @@ function Gallery() {
                 Our Recent Projects
             </h2>
            <div className="gallery-container">
-            <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc" alt="Furniture Project" />
+            <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc" loading="lazy" alt="Furniture Project" />
 
-              <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85" alt="Wardrobe Project" />
+              <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85" loading="lazy" alt="Wardrobe Project" />
 
-              <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858" alt="Kitchen Project" />
+              <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858" loading="lazy" alt="Kitchen Project" />
 
-              <img src="https://images.unsplash.com/photo-1494526585095-c41746248156" alt="Interior Design" />
+              <img src="https://images.unsplash.com/photo-1494526585095-c41746248156" loading="lazy" alt="Interior Design" />
               
            </div>
         </section>

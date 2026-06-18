@@ -1,8 +1,17 @@
 import "./Navbar.css";
 import logo from "../assets/logo.png";
 import { useState } from "react";
+import { useCart } from "../context/CartContext";
+import { Link } from "react-router-dom";
+import { useAuth } from "../context/AuthContext";
 
 function Navbar(){
+    const { user } = useAuth();
+    const { cart } = useCart();
+    const cartCount = cart.reduce(
+        (sum,item) => sum + item.quantity,
+        0
+    );
     const [menuOpen,setMenuOpen]=useState(false);
     const scrollToSection = (id) => {
 
@@ -56,6 +65,16 @@ function Navbar(){
             <ul className={menuOpen?"show":""}>
                 <li><a href="#/">Home</a></li>
                 <li><a href="#/products">Products</a></li>
+                <li>
+                    <Link to="/cart" className="cart-link">
+                    🛒 Cart
+                    {cartCount > 0 &&(
+                        <span className="cart-badge">
+                            {cartCount}
+                        </span>
+                    )}
+                    </Link>
+                </li>
                 <li><button
                     onClick={()=>
                     scrollToSection("about")
@@ -63,7 +82,8 @@ function Navbar(){
                     >
                         About
                     </button>
-                    </li>
+                </li>
+                
                 <li><button
                     onClick={()=>
                     scrollToSection("services")
@@ -88,6 +108,27 @@ function Navbar(){
                         Contact
                     </button>
                 </li>
+                {user ?(
+                    <li>
+                        <a href="/#/profile">
+                            👤 {user.name.split(" ")[0]}
+                        </a>
+                    </li>
+                ):(
+                    <>
+                        <li>
+                            <a href="/#/login">
+                             Login
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="/#/register">
+                             Register
+                            </a>
+                        </li>
+                    </>
+                )}
             </ul>
         </nav>
     );

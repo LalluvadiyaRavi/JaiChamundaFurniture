@@ -28,6 +28,7 @@ className="project-card"
 <img
 src={item.image}
 alt={item.title}
+loading="lazy"
 />
 
 <div className="project-info">

@@ -2,15 +2,18 @@ import { Helmet } from "react-helmet-async";
 import { useState,useEffect } from "react";
 import { useParams } from "react-router-dom";
 import products from "../data/products";
+import { useCart } from "../context/CartContext";
 import QuoteForm from "../components/QuoteForm";
 import "./ProductDetails.css";
 import { useNavigate } from "react-router-dom";
 import {Link} from "react-router-dom";
+
+
 function ProductDetails() {
   const { id } = useParams();
   const navigate = useNavigate();
   const [showForm, setShowForm] = useState(false);
-
+  const { addToCart } = useCart();
   const [selectedImage, setSelectedImage] = useState(null);
 //for ligth box or main image on full screen
   const [showLightbox, setShowLightbox] = useState(false);
@@ -144,6 +147,7 @@ const [touchEnd, setTouchEnd] = useState(null);
             <img
               src={selectedImage}
               alt={product.name}
+              loading="lazy"
               className="main-product-image"
               onClick={() => {
                 setCurrentImageIndex(
@@ -160,6 +164,7 @@ const [touchEnd, setTouchEnd] = useState(null);
                 key={index}
                 src={image}
                 alt={product.name}
+                loading="lazy"
                 className={`thumbnail ${
                     selectedImage === image
                     ? "active-thumbnail"
@@ -212,7 +217,15 @@ const [touchEnd, setTouchEnd] = useState(null);
             >
                 Request Quote
             </button>
-
+            <button 
+              className="cart-btn"
+              onClick={() => {
+                addToCart(product);
+                navigate("/cart");
+              }}
+            >
+              Add to Cart 🛒
+            </button>
             <a
             href={`https://wa.me/917874707088?text=${encodeURIComponent(
                 `Hello Jai Chamunda Furniture,
@@ -266,6 +279,7 @@ const [touchEnd, setTouchEnd] = useState(null);
     <img
       src={product?.images?.[currentImageIndex]}
       alt={product.name}
+      loading="lazy"
       onTouchStart={onTouchStart}
       onTouchMove={onTouchMove}
       onTouchEnd={onTouchEnd}
@@ -310,6 +324,7 @@ const [touchEnd, setTouchEnd] = useState(null);
                       <img
                         src={item.image}
                         alt={item.name}
+                        loading="lazy"
                       />
 
                       <h4>{item.name}</h4>

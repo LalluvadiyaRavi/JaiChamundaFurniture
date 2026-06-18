@@ -118,6 +118,30 @@ border:none;
 cursor:pointer;
 
 }
+.cart-link{
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.cart-badge{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 20px;
+  height: 20px;
+
+  border-radius: 50%;
+  background: #dc3545;
+  color: white;
+
+  font-size: 0.7rem;
+  font-weight: 700;
+}
 
 /* MOBILE */@media(max-width:768px){
 
