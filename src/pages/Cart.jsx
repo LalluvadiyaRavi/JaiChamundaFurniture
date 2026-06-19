@@ -30,12 +30,12 @@ function Cart() {
             Explore our products and add items.
           </p>
 
-          <a
-            href="/#/products"
+          <Link
+            to="/products"
             className="shop-btn"
           >
             Browse Products
-          </a>
+          </Link>
         </div>
       ) : (
         <div className="cart-layout">
@@ -48,6 +48,7 @@ function Cart() {
               <img
                 src={item.image}
                 alt={item.name}
+                loading="lazy"
               />
 
               <div>

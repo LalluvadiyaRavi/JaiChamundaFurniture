@@ -117,9 +117,9 @@ function Register() {
 
         <p>
           Already have account?
-          <a href="/#/login">
+          <Link to="/login">
             {" "}Login
-          </a>
+          </Link>
         </p>
       </form>
     </div>

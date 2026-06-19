@@ -71,9 +71,9 @@ function Login() {
 
         <p>
           Don't have account?
-          <a href="/#/register">
+          <Link to="/register">
             {" "}Register
-          </a>
+          </Link>
         </p>
       </form>
     </div>
